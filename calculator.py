@@ -1,4 +1,9 @@
-# Class_checker asks for a number to enter, then returns int for int, float for float, and, if string inputed, gives you an enother chance.
+'''
+Class_checker asks for a number to enter, then returns int for int, float for float,
+and, if string inputed, gives you an enother chance.
+'''
+
+
 def class_checker():
     numb = input('Enter a number: ')
     try:
