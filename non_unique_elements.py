@@ -11,7 +11,7 @@ def checkio(data: list) -> list:
         else:
             dict_with_elem[elem] = False
     for elem in data:
-        if dict_with_elem[elem] == True:
+        if dict_with_elem[elem]:
             data_non_uniq.append(elem)
     return data_non_uniq
 
