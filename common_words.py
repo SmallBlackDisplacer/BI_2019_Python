@@ -1,6 +1,6 @@
 def checkio(first, second):
     first_set = set(first.split(','))
-    second_list = list(second.split(','))
+    second_list = second.split(',')
     common_words = []
     for word in second_list:
         if word in first_set:

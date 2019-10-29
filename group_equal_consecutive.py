@@ -3,9 +3,7 @@ def group_equal(els):
     for i in range(len(els)):
         if i == 0 or els[i] != els[i - 1]:
             current_list = []
-            current_list.append(els[i])
-        else:
-            current_list.append(els[i])
+        current_list.append(els[i])
         if i == len(els) - 1 or els[i + 1] != els[i]:
             result_list.append(current_list)
     return result_list
