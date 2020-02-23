@@ -20,7 +20,7 @@ else:
 inp = open(args.filename, 'r')
 passed = open(output_name + "__passed.fastq", 'w')
 failed = open(output_name + "__failed.fastq", 'w') if args.keep_filtered else None
-min_length = args.min_length or 999999999
+min_length = args.min_length or -1
 gc_bottom_bound = args.gc_bounds[0] if args.gc_bounds is not None else 0
 gc_top_bound = args.gc_bounds[1] if (args.gc_bounds is not None and len(args.gc_bounds) > 1) else 100
 
@@ -40,7 +40,7 @@ def iterator():
 read = [None, None, None, None]
 
 for (line, chunking) in zip(inp, iterator()):
-    read[chunking] = line[:-1]
+    read[chunking] = line.strip()
     if chunking == 3:
         sequence = read[1]
         passes_min = len(sequence) >= min_length
