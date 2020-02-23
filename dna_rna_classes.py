@@ -67,4 +67,3 @@ class Dna(Rna):
             else:
                 new_rna.append('N')
         return ''.join(new_rna)
-        и
