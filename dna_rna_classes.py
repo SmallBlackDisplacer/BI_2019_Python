@@ -1,5 +1,6 @@
 import re
 
+
 class Rna:
     def __init__(self, seq):
         pattern = re.compile(r'[AUGCNaugcn]*')
@@ -41,6 +42,7 @@ class Rna:
         reverse.reverse()
         return ''.join(reverse)
 
+
 class Dna(Rna):
     def __init__(self, seq):
         pattern = re.compile(r'[ATGCNatgcn]*')
@@ -65,3 +67,4 @@ class Dna(Rna):
             else:
                 new_rna.append('N')
         return ''.join(new_rna)
+        и
