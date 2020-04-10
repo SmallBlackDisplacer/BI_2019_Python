@@ -15,7 +15,7 @@ class TestFastq_f(unittest.TestCase):
             os.remove('./out_test__passed.fastq')
         self.assertTrue(os.path.exists('./out_test__failed.fastq'))
         if os.path.exists('./out_test__failed.fastq'):
-            print ('hm')
+            print('hm')
             os.remove('./out_test__failed.fastq')
 
 
