@@ -1,14 +1,16 @@
-import argparse
+if __name__ == '__main__':
+    import argparse
 
-parser = argparse.ArgumentParser()
-parser.add_argument("filename")
-parser.add_argument("-m", "--min_length", type=int)
-parser.add_argument("-k", "--keep_filtered", action='store_true')
-parser.add_argument("-b", "--gc_bounds", nargs="+", type=int)
-parser.add_argument("-o", "--output_base_name", type=str)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("filename")
+    parser.add_argument("-m", "--min_length", type=int)
+    parser.add_argument("-k", "--keep_filtered", action='store_true')
+    parser.add_argument("-b", "--gc_bounds", nargs="+", type=int)
+    parser.add_argument("-o", "--output_base_name", type=str)
 
-args_d = parser.parse_args()
-# print(args_d)
+    args_d = parser.parse_args()
+    # print(args_d)
+
 
 def fastq_f(args):
     output_name = None
