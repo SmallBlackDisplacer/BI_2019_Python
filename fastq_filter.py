@@ -8,8 +8,6 @@ parser.add_argument("-b", "--gc_bounds", nargs="+", type=int)
 parser.add_argument("-o", "--output_base_name", type=str)
 
 args_d = parser.parse_args()
-
-
 # print(args)
 
 def fastq_f(args):
