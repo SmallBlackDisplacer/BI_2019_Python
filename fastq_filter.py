@@ -8,7 +8,7 @@ parser.add_argument("-b", "--gc_bounds", nargs="+", type=int)
 parser.add_argument("-o", "--output_base_name", type=str)
 
 args_d = parser.parse_args()
-# print(args)
+# print(args_d)
 
 def fastq_f(args):
     output_name = None
