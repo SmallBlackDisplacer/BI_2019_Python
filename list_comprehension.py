@@ -14,7 +14,7 @@ print(result_two)
 # составить словарь, где слову соответствует его длина.
 
 message_three = "The ships hung in the sky in much the same way that bricks don't"
-dict_three = {el: i for el, i in zip(message_three.split(' '),list(map(lambda x: len(x), message_three.split(' '))))}
+dict_three = {el: i for el, i in zip(message_three.split(' '), list(map(lambda x: len(x), message_three.split(' '))))}
 print(dict_three)
 
 # 4*. Для чисел от 1 до 1000 наибольшая цифра, на которую они делятся (1-9).
