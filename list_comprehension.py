@@ -21,3 +21,6 @@ print(dict_three)
 
 
 # 5*. Список всех чисел от 1 до 1000, не имеющих делителей среди чисел от 2 до 9.
+
+list_five = [x for x in range(1, 1001) if sum(list(map(lambda y: x % y == 0, range(2, 10)))) == 0]
+print(list_five)
