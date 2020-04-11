@@ -19,6 +19,10 @@ print(dict_three)
 
 # 4*. Для чисел от 1 до 1000 наибольшая цифра, на которую они делятся (1-9).
 
+dict_four = {el: i for el, i in zip(range(1, 1001),
+                                    map(lambda y: (max(list(map(lambda x: x if y % x == 0 else 0,
+                                                                range(1, 10))))), range(1, 1001)))}
+print(dict_four)
 
 # 5*. Список всех чисел от 1 до 1000, не имеющих делителей среди чисел от 2 до 9.
 
